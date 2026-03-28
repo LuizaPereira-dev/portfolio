@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #111;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background: #1a1a1a;
+}
+
+.logo {
+    color: #22c55e;
+    font-weight: 600;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    text-align: center;
+    padding: 80px;
+}
+
+.text h1 {
+    font-size: 3rem;
+    color: #22c55e;
+}
+
+.text h3 {
+    margin: 10px 0;
+}
+
+.text p {
+    margin: 10px 0;
+    color: #ccc;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    background: #22c55e;
+    padding: 10px 25px;
+    border-radius: 25px;
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.btn-outline {
+    border: 2px solid #22c55e;
+    padding: 10px 25px;
+    border-radius: 25px;
+    color: #22c55e;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.quote-box {
+    margin: 20px 0;
+    padding: 15px;
+    border-left: 4px solid #22c55e;
+    background: rgba(34, 197, 94, 0.1);
+    font-style: italic;
+    color: #a7f3d0;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(#22c55e 1px, transparent 1px);
+    background-size: 40px 40px;
+    opacity: 0.1;
+    animation: moveBg 20s linear infinite;
+    z-index: -1;
+}
+
+@keyframes moveBg {
+    from { transform: translateY(0); }
+    to { transform: translateY(100px);}
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+.projects {
+    margin-top: 20px;
+}
+
+.projects-item {
+    background: #1a1a1a;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid rgba(34, 197, 94, 0.2);
+}
+
+.github-btn {
+    margin-top: 30px;
+}
+
+.name {
+    font-size: 2rem;
+    margin-top: 10px;
+    color: #fff;
+}
+
+#typing {
+    font-size: 2.5rem;
+    color: #22c55e;
+    min-height: 40px;
+}
